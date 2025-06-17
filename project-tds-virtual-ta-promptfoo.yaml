@@ -7,7 +7,7 @@ providers:
       method: POST
       headers:
         Content-Type: application/json
-        Authorization: Bearer AIzaSyBdxWmDA4Ek6YJvqr4W1ncVHhm5MuzE0cs
+        Authorization: Bearer random
       body: |
         {
           "question": "{{ question }}",
