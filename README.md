@@ -1,0 +1,1 @@
+This app is a RAG-based Virtual Teaching Assistant using Gemini (Google's LLM). It retrieves academic content from local notes and generates answers using LLM. It supports text and image inputs, ensures privacy, and integrates with Promptfoo for prompt evaluation, offering fast, intelligent, and offline academic assistance for students.
