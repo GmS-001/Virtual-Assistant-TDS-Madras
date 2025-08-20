@@ -32,7 +32,7 @@ async def ask(request: QuestionRequest) :
     if not request.question or not request.question.strip():
       raise HTTPException(status_code=400, detail="Question cannot be empty.")
 
-    
+    print("Sending request ...")
     answer = await generate_answer(request.question,request.image)
     if answer :
         return JSONResponse(status_code=200, content= answer)

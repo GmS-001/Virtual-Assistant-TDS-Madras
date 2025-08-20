@@ -43,7 +43,7 @@ async def process_image(image):
         return ""
 
 
-chat_model = GoogleGenerativeAI(model="gemini-1.5-flash",temperature = 0.2)
+chat_model = GoogleGenerativeAI(model="gemini-2.5-flash",temperature = 0.2)
 embedding_model = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 vector_store = FAISS.load_local("tds_index", embedding_model, allow_dangerous_deserialization=True)
 multiqueryretriver = MultiQueryRetriever.from_llm(
